@@ -1,0 +1,110 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/game.css">
+    <title>Flappy Birds</title>
+</head>
+<body>
+    <div id="container">
+        <!-- component -->
+        <div class="menue-start-bg">
+            <div class="menue-start">
+                <h2>
+                    please fill the information
+                </h2>
+                <input type="text" name="" id="" placeholder="username">
+                <input type="email" name="" id="" placeholder="email@gmail.com">
+                <button class="save-inf">
+                    Save
+                </button>
+            </div>
+        </div>
+        <div class="timer-bg">
+            <span class="timer">4</span>
+        </div>
+        <div class="error-side">
+            <img src="../Image/icons8-error-52.png" alt="">
+            <span class="error"></span>
+        </div>
+        <div class="gameover-side">
+            <h1>Game over</h1>
+            <span>pleyer : <span class="show-pleyer"></span></span>
+            <span>your score : <span class="show-score"></span></span>
+            <span>time : <span class="show-time"></span></span>
+            <button class="playe-again">playe again</button>
+            <button class="return-lobby">
+                return lobby
+            </button>
+        </div>
+        <!-- <div class="setting-bg">
+            <div class="setting-side">
+                <h1>setting</h1>
+                <div id="line"></div>
+                <div class="setting-icon">
+                    <button class="character" title="show character">
+                        <img src="Image/Object/Birds.png" alt="">
+                    </button>
+                </div>
+                <button class="return-lobby">
+                    return lobby
+                </button>
+                <button class="close-setting">
+                    close setting
+                </button>
+            </div>
+        </div> -->
+
+        <header>
+            <div id="pleyer-info">
+                <img src="../Image/Object/Birds.png" alt="">
+                <span id="username">name</span>
+            </div>
+            <div id="timer-side">
+                <img src="../Image/Object/timer.png" alt="">
+                <div id="time">
+                    <span id="min">00</span>
+                    <span>:</span>
+                    <span id="second">00</span>
+                </div>
+            </div>
+            <div id="coin-side">
+                <img src="../Image/Object/coin.png" alt="">
+                <span id="coin"></span>
+            </div>
+            <div id="score-side">
+                <img src="../Image/Object/score.png" alt="">
+                <span id="score">0</span>
+            </div>
+        </header>
+
+        <div id="pleye-side">
+            <div id="pleyer">
+                <img src="../Image/Object/Birds.png" alt="">
+            </div>
+            <!-- <div class="pipe-side">
+                <img src="Image/Object/pipe.png" alt="" class="top">
+                <img src="Image/Object/coin.png" alt="" class="coin">
+                <img src="Image/Object/pipe.png" alt="" class="bottom">
+            </div> -->
+            <div class="coin-side">
+                <!-- <img src="Image/Object/coin.png" alt="" class="coin"> -->
+            </div>
+        </div>
+
+
+
+        <div id="footer">
+            <button id="mute">
+                <img src="../Image/Object/volume.png" alt="" id="mute-img">
+            </button>
+            <button class="return-lobby">
+                return lobby
+            </button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="../script/game.js"></script>

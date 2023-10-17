@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.507) , rgba(0, 0, 0, 0.637)) , url(/Image/lobby-bg.webp);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header-container{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rank-side{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+    overflow-x: scroll;
+}
+
+.character-side{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.character img{
+    width: 100%;
+}
+
+.button-side{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 50px;
+    gap: 20px;
+}
+
+.button-side button{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 500ms;
+} 
+
+.button-side button[go]{
+    transform: translateX(-100px);
+}
+
+.rank-show{
+    position: relative;
+    width: 15rem;
+    height: 12rem;
+    padding: 20px;
+    background-color: rgb(17, 58, 58);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    gap: 20px;
+}
+
+.rank-show>img{
+    width: 100px;
+}
+
+.session::after , .buy-skin::after{
+    content: 'coming Soon ...';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.144);
+    position: absolute;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-more{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    animation: arrow-button 1s linear infinite;
+}
+
+.medal{
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+@keyframes arrow-button {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes number-one {
+    0%{
+        transform: translateY(0) rotate(0);
+    }
+    50%{
+        transform: translateY(-10) rotate(45deg);
+    }
+    100%{
+        transform: translateY(0) rotate(0);
+    }
+}
+
+.rank-bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.295);
+    z-index: 6;
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.rank-global{
+    width: 30rem;
+    height: 90%;
+    background-color: #918856;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#line{
+    width: 80%;
+    height: 1px;
+    background-color: white;
+}
+
+table{
+    width: 100%;
+    height: max-content;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+table  tr {
+    width: 100%;
+    height: 40px;
+}
+
+table  tr td{
+    border: none;
+}
+
+table tr:nth-child(odd){
+    background-color: #413d26;
+}
+
+table tr:nth-child(even){
+    background-color: #cabf7c;
+}
+
+.close-ranking{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(117, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
